@@ -1,6 +1,6 @@
-# Barebones gulp project
+# Audio Photography
 
-Barebones gulp.js project. Gives you local server, liveReload, Sass, & jshint.
+Single page to hold Audio Photography decks.
 
 ### getting started
 
