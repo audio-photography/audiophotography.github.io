@@ -1,0 +1,103 @@
+//===============================================================================
+// IMPORTS
+//===============================================================================
+// normalize.css v3.0.0 | MIT License | git.io/normalize
+@import "_normalize.scss";
+
+// define mixins & functions
+@import "_mixins.scss";
+
+//===============================================================================
+// VARIABLES
+//===============================================================================
+$paper:  white;
+$ink:    black;
+$ap-blue: #4089E6;
+$ap-green: #3FE79E;
+
+@font-face {
+  font-family: 'BrandonText';
+  src:
+    url('../fonts/BrandonText-Light.otf')
+    format('opentype');
+}
+
+//===============================================================================
+// BASCIS
+//===============================================================================
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+html,
+body {
+  height: 100vh;
+  background: linear-gradient(to right, $ap-blue, $ap-green);
+  color: $ink;
+  font-family: 'BrandonText', sans-serif;
+  line-height: 1.4;
+  text-align: center;
+}
+
+//===============================================================================
+// AUDIO PHOTOGRAPHY CUSTOM STYLES
+//===============================================================================
+
+.content-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+
+  .logo {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 566px;
+    max-height: 303px;
+    padding: 20px;
+  }
+
+  p {
+    padding: 20px 0 40px 0;
+    font-size: 22px;
+    color: white;
+    line-height: 36px;
+  }
+
+  a {
+    border: 2px solid white;
+    padding: 10px 40px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: white;
+      color: $ap-blue;
+    }
+
+  }
+
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 12px;
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+}
